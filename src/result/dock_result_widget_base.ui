@@ -1,0 +1,248 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>DockResultWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>DockResultWidgetBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>212</width>
+            <height>457</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>190</width>
+            <height>190</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QToolBox" row="0" column="0">
+            <property name="name">
+                <cstring>toolBox2</cstring>
+            </property>
+            <property name="currentIndex">
+                <number>0</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Display</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Display</string>
+                </attribute>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>16</width>
+                            <height>1</height>
+                        </size>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>97</x>
+                            <y>148</y>
+                            <width>16</width>
+                            <height>272</height>
+                        </rect>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>modelCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>188</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;3D Model</string>
+                    </property>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>37</y>
+                            <width>188</width>
+                            <height>105</height>
+                        </rect>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="title">
+                        <string>Garments</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QCheckBox" row="0" column="0">
+                            <property name="name">
+                                <cstring>surfaceCheckBox</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Surface</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>typeCheckBox</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>T&amp;ypes</string>
+                            </property>
+                            <property name="accel">
+                                <string>Alt+Y</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox" row="0" column="1">
+                            <property name="name">
+                                <cstring>surfaceRenderTypeCheckBox</cstring>
+                            </property>
+                            <property name="font">
+                                <font>
+                                    <pointsize>9</pointsize>
+                                </font>
+                            </property>
+                            <property name="text">
+                                <string>Wireframe</string>
+                            </property>
+                            <property name="accel">
+                                <string></string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox" row="1" column="0" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>contourCheckBox</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Contour</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>colorDialogButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>9</x>
+                            <y>145</y>
+                            <width>51</width>
+                            <height>51</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Colour</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>modelCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>modelCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>surfaceCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>surfaceCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>contourCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>contourCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>typeCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>typeCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>surfaceRenderTypeCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>surfaceRenderTypeCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>colorDialogButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DockResultWidgetBase</receiver>
+        <slot>colorDialogButton_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>modelCheckBox</tabstop>
+    <tabstop>surfaceCheckBox</tabstop>
+    <tabstop>contourCheckBox</tabstop>
+    <tabstop>typeCheckBox</tabstop>
+</tabstops>
+<slots>
+    <slot>modelCheckBox_toggled(bool)</slot>
+    <slot>surfaceCheckBox_toggled(bool)</slot>
+    <slot>contourCheckBox_toggled(bool)</slot>
+    <slot>typeCheckBox_toggled(bool)</slot>
+    <slot>surfaceRenderType_toggled(bool)</slot>
+    <slot>surfaceRenderTypeCheckBox_toggled(bool)</slot>
+    <slot>colorDialogButton_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

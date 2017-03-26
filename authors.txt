@@ -1,0 +1,3 @@
+Authors
+-------
+Emmanuel Turquin	<emmanuel.turquin@imag.fr>

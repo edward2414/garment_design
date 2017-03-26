@@ -1,0 +1,906 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>DockPatternWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>DockPatternWidgetBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>190</width>
+            <height>675</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>190</width>
+            <height>190</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QToolBox" row="0" column="0">
+            <property name="name">
+                <cstring>toolBox1</cstring>
+            </property>
+            <property name="currentIndex">
+                <number>0</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Display</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Display</string>
+                </attribute>
+                <widget class="QListView">
+                    <column>
+                        <property name="text">
+                            <string>Column 1</string>
+                        </property>
+                        <property name="clickable">
+                            <bool>true</bool>
+                        </property>
+                        <property name="resizable">
+                            <bool>true</bool>
+                        </property>
+                    </column>
+                <item>
+                    <property name="text">
+                        <string>New Item</string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap></pixmap>
+                    </property>
+                </item>
+                    <property name="name">
+                        <cstring>listView1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>10</y>
+                            <width>170</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>edgesRequiredLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>20</x>
+                            <y>90</y>
+                            <width>160</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Top / Bottom / Left / Right</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>rightEdgesSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>130</x>
+                            <y>110</y>
+                            <width>30</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>leftEdgesSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>90</x>
+                            <y>110</y>
+                            <width>30</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>bottomEdgesSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>50</x>
+                            <y>110</y>
+                            <width>30</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>topEdgesSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>110</y>
+                            <width>30</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>colLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>150</y>
+                            <width>61</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Cols:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>atlasColsSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>140</x>
+                            <y>150</y>
+                            <width>40</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>cmLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>130</y>
+                            <width>140</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Change Control Mesh</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>controlMeshCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>230</y>
+                            <width>166</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Display &amp;Control Mesh</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>bSurfaceCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>250</y>
+                            <width>170</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Display &amp;Buckling Surface</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+B</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>rowLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>150</y>
+                            <width>61</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Rows:</string>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>atlasRowsSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>50</x>
+                            <y>150</y>
+                            <width>40</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>displayModelCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>170</y>
+                            <width>110</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Display &amp;Model</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+M</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>patternCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>190</y>
+                            <width>166</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Display &amp;Pattern / Mesh</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+P</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>modelMeshCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>210</y>
+                            <width>160</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Displa&amp;y Dev'd Mesh</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+Y</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>collisionEnabledCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>270</y>
+                            <width>140</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Co&amp;llision Detection</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+L</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>twistFactorLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>310</y>
+                            <width>90</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Twist Factor</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>twistAngleLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>30</x>
+                            <y>330</y>
+                            <width>84</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Twist Degrees</string>
+                    </property>
+                </widget>
+                <widget class="FloatSpinBox">
+                    <property name="name">
+                        <cstring>twistSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>130</x>
+                            <y>330</y>
+                            <width>50</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="FloatSpinBox">
+                    <property name="name">
+                        <cstring>twistFactorFloatSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>130</x>
+                            <y>310</y>
+                            <width>50</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>hCompressLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>350</y>
+                            <width>139</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Horizontal Compression</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>hCompBLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>370</y>
+                            <width>43</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Bottom</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>hCompTLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>100</x>
+                            <y>370</y>
+                            <width>30</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Top</string>
+                    </property>
+                </widget>
+                <widget class="FloatSpinBox">
+                    <property name="name">
+                        <cstring>hCompressTopFloatSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>130</x>
+                            <y>370</y>
+                            <width>50</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="FloatSpinBox">
+                    <property name="name">
+                        <cstring>hCompressBottomFloatSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>50</x>
+                            <y>370</y>
+                            <width>50</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>ptfLabel</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>0</x>
+                            <y>390</y>
+                            <width>127</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Patch Tangent Factor</string>
+                    </property>
+                </widget>
+                <widget class="FloatSpinBox">
+                    <property name="name">
+                        <cstring>patchTangentFactorFloatSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>130</x>
+                            <y>390</y>
+                            <width>50</width>
+                            <height>16</height>
+                        </rect>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>axisAlignButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>410</y>
+                            <width>160</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Realign to central a&amp;xis</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+X</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>Redraw</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>440</y>
+                            <width>160</width>
+                            <height>21</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Redraw</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+R</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>twistEnabledCheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>290</y>
+                            <width>110</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Twist E&amp;nabled</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+N</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>effect1CheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>470</y>
+                            <width>96</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Effect &amp;1</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+1</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>effect4CheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>530</y>
+                            <width>103</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Effect &amp;4</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+4</string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>140</x>
+                            <y>470</y>
+                            <width>20</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>effect2CheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>490</y>
+                            <width>96</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Effect &amp;2</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+2</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>effect3CheckBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>510</y>
+                            <width>103</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Effect &amp;3</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+3</string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>slider1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>110</x>
+                            <y>470</y>
+                            <width>20</width>
+                            <height>80</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>FloatSpinBox</class>
+        <header location="local">floatspinbox.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>valueChanged(float)</signal>
+        <slot access="public" specifier="">slot()</slot>
+        <slot access="public" specifier="">setValue(float)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>patternCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>patternCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>listView1</sender>
+        <signal>clicked(QListViewItem*)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>switchAtlas(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>controlMeshCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>controlMeshCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>Redraw</sender>
+        <signal>clicked()</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>Redraw_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>twistSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>twistSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>twistFactorFloatSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>twistFactorFloatSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>patchTangentFactorFloatSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>patchTangentFactorFloatSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>hCompressTopFloatSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>hCompressTopFloatSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>hCompressBottomFloatSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>hCompressBottomFloatSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>modelMeshCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>modelMeshCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>atlasColsSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>atlasColsSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>atlasRowsSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>atlasRowsSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>bSurfaceCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>bSurfaceCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>twistEnabledCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>twistEnabledCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>collisionEnabledCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>collisionEnabledCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>displayModelCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>displayModelCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>axisAlignButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>axisAlignButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>topEdgesSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>topEdgesSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>bottomEdgesSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>bottomEdgesSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>leftEdgesSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>leftEdgesSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>rightEdgesSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>rightEdgesSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>effect1CheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>effect1CheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>effect2CheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>effect2CheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>effect3CheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>Effect_3_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>effect4CheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>effect4CheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>slider1</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>slider1_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>slider2</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>slider2_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>effect3CheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPatternWidgetBase</receiver>
+        <slot>effect3CheckBox_toggled(bool)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>patternCheckBox</tabstop>
+</tabstops>
+<slots>
+    <slot>patternCheckBox_toggled( bool )</slot>
+    <slot>switchAtlas(QListViewItem*)</slot>
+    <slot>controlMeshCheckBox_toggled(bool)</slot>
+    <slot>Redraw_clicked()</slot>
+    <slot>twistSpinBox_valueChanged(float)</slot>
+    <slot>twistFactorFloatSpinBox_valueChanged(float)</slot>
+    <slot>patchTangentFactorFloatSpinBox_valueChanged(float)</slot>
+    <slot>hCompressTopFloatSpinBox_valueChanged(float)</slot>
+    <slot>hCompressBottomFloatSpinBox_valueChanged(float)</slot>
+    <slot>modelMeshCheckBox_toggled(bool)</slot>
+    <slot>atlasColsSpinBox_valueChanged(int)</slot>
+    <slot>atlasRowsSpinBox_valueChanged(int)</slot>
+    <slot>bSurfaceCheckBox_toggled(bool)</slot>
+    <slot>twistEnabledCheckBox_toggled(bool)</slot>
+    <slot>collisionEnabledCheckBox_toggled(bool)</slot>
+    <slot>displayModelCheckBox_toggled(bool)</slot>
+    <slot>axisAlignButton_clicked()</slot>
+    <slot>topEdgesSpinBox_valueChanged(int)</slot>
+    <slot>bottomEdgesSpinBox_valueChanged(int)</slot>
+    <slot>leftEdgesSpinBox_valueChanged(int)</slot>
+    <slot>rightEdgesSpinBox_valueChanged(int)</slot>
+    <slot>effect1CheckBox_toggled(bool)</slot>
+    <slot>effect2CheckBox_toggled(bool)</slot>
+    <slot>Effect_3_toggled(bool)</slot>
+    <slot>effect4CheckBox_toggled(bool)</slot>
+    <slot>slider1_valueChanged(int)</slot>
+    <slot>slider2_valueChanged(int)</slot>
+    <slot>effect3CheckBox_toggled(bool)</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+</includehints>
+</UI>

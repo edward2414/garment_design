@@ -1,0 +1,7 @@
+- Remove all the FIXMEs
+- Load/Save capabilities
+- Add different layers (folds, seams)
+- offscreen.h for Win32
+- Fix interface flaws (cascade, dock area size)
+- Progress bar
+- A nice picture/logo for the 'About' window :)

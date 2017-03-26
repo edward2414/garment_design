@@ -1,0 +1,755 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>DockPretreatmentWidgetBase</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>DockPretreatmentWidgetBase</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>190</width>
+            <height>703</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>190</width>
+            <height>500</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <property name="spacing">
+            <number>0</number>
+        </property>
+        <widget class="QToolBox" row="0" column="0">
+            <property name="name">
+                <cstring>toolBox</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>0</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="currentIndex">
+                <number>0</number>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Computation</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Computation</string>
+                </attribute>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>11</y>
+                            <width>166</width>
+                            <height>129</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Bounding Box</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="FloatSpinBox" row="0" column="1">
+                            <property name="name">
+                                <cstring>bbXSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="FloatSpinBox" row="1" column="1">
+                            <property name="name">
+                                <cstring>bbYSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="FloatSpinBox" row="2" column="1">
+                            <property name="name">
+                                <cstring>bbZSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabel1_4</cstring>
+                            </property>
+                            <property name="text">
+                                <string>dx:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>textLabel1_2_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>dy:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="0">
+                            <property name="name">
+                                <cstring>textLabel1_3_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>dz:</string>
+                            </property>
+                        </widget>
+                        <widget class="QPushButton" row="3" column="0" rowspan="1" colspan="2">
+                            <property name="name">
+                                <cstring>bbResetButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Reset</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox3_2</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>146</y>
+                            <width>166</width>
+                            <height>58</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Texture</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabel1_7</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Size:</string>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox" row="0" column="1">
+                            <property name="name">
+                                <cstring>textureSizeSpinBox</cstring>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>210</y>
+                            <width>166</width>
+                            <height>58</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Octree</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QSpinBox" row="0" column="1">
+                            <property name="name">
+                                <cstring>octreeLevelSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="0" column="0">
+                            <property name="name">
+                                <cstring>textLabel1_5</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Subdiv. lvl:</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QGroupBox">
+                    <property name="name">
+                        <cstring>groupBox4</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>274</y>
+                            <width>166</width>
+                            <height>142</height>
+                        </rect>
+                    </property>
+                    <property name="title">
+                        <string>Distance Field</string>
+                    </property>
+                    <grid>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QLabel" row="0" column="1">
+                            <property name="name">
+                                <cstring>textLabel2_2</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Cells nb:</string>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox" row="1" column="1">
+                            <property name="name">
+                                <cstring>dfXSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox" row="2" column="1">
+                            <property name="name">
+                                <cstring>dfYSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QSpinBox" row="3" column="1">
+                            <property name="name">
+                                <cstring>dfZSpinBox</cstring>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="3" column="0">
+                            <property name="name">
+                                <cstring>textLabel5</cstring>
+                            </property>
+                            <property name="text">
+                                <string>z:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="2" column="0">
+                            <property name="name">
+                                <cstring>textLabel4</cstring>
+                            </property>
+                            <property name="text">
+                                <string>y:</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel" row="1" column="0">
+                            <property name="name">
+                                <cstring>textLabel3</cstring>
+                            </property>
+                            <property name="text">
+                                <string>x:</string>
+                            </property>
+                        </widget>
+                    </grid>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>computeButton</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>11</x>
+                            <y>422</y>
+                            <width>166</width>
+                            <height>30</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>Comp&amp;ute</string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>60</height>
+                        </size>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>86</x>
+                            <y>582</y>
+                            <width>20</width>
+                            <height>60</height>
+                        </rect>
+                    </property>
+                </spacer>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>dfSliceSlider</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>10</x>
+                            <y>460</y>
+                            <width>20</width>
+                            <height>120</height>
+                        </rect>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+                <widget class="QSpinBox">
+                    <property name="name">
+                        <cstring>dfSliceSpinBox</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>39</x>
+                            <y>461</y>
+                            <width>50</width>
+                            <height>25</height>
+                        </rect>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>Display</cstring>
+                </property>
+                <property name="backgroundMode">
+                    <enum>PaletteBackground</enum>
+                </property>
+                <attribute name="label">
+                    <string>Display</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QCheckBox" row="0" column="0">
+                        <property name="name">
+                            <cstring>modelCheckBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>3D Model</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>bbCheckBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Bounding Box</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>bbAxisCheckBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Bounding Box Axis</string>
+                        </property>
+                    </widget>
+                    <widget class="QCheckBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>octreeCheckBox</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Octree</string>
+                        </property>
+                    </widget>
+                    <widget class="QButtonGroup" row="4" column="0">
+                        <property name="name">
+                            <cstring>buttonGroup1</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Distance Field</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>dfCheckBox</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Display</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>x:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>y:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="4" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>z:</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="1">
+                                <property name="name">
+                                    <cstring>textLabel1_6</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>From:</string>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="2" column="1">
+                                <property name="name">
+                                    <cstring>dfXMinSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="2" column="2">
+                                <property name="name">
+                                    <cstring>dfXMaxSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="3" column="1">
+                                <property name="name">
+                                    <cstring>dfYMinSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="3" column="2">
+                                <property name="name">
+                                    <cstring>dfYMaxSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="4" column="1">
+                                <property name="name">
+                                    <cstring>dfZMinSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QSpinBox" row="4" column="2">
+                                <property name="name">
+                                    <cstring>dfZMaxSpinBox</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="2">
+                                <property name="name">
+                                    <cstring>textLabel2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>To:</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QButtonGroup" row="5" column="0">
+                        <property name="name">
+                            <cstring>buttonGroup2</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Camera Type</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QRadioButton" row="0" column="0">
+                                <property name="name">
+                                    <cstring>perspectiveButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Perspective</string>
+                                </property>
+                            </widget>
+                            <widget class="QRadioButton" row="1" column="0">
+                                <property name="name">
+                                    <cstring>orthoButton</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Orthogonal</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <spacer row="6" column="0">
+                        <property name="name">
+                            <cstring>spacer7</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>16</width>
+                                <height>1</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>FloatSpinBox</class>
+        <header location="local">floatspinbox.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image0</pixmap>
+        <signal>valueChanged(float)</signal>
+        <slot access="public" specifier="">slot()</slot>
+        <slot access="public" specifier="">setValue(float)</slot>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XBM.GZ" length="79">789c534e494dcbcc4b554829cdcdad8c2fcf4c29c95030e0524611cd48cd4ccf28010a1797249664262b2467241641a592324b8aa363156c15aab914146aadb90067111b1f</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>modelCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>modelCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>bbCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>octreeCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>octreeCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>perspectiveButton</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>perspectiveButton_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>orthoButton</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>orthoButton_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>bbZSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbZSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>bbYSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbYSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>bbXSpinBox</sender>
+        <signal>valueChanged(float)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbXSpinBox_valueChanged(float)</slot>
+    </connection>
+    <connection>
+        <sender>octreeLevelSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>octreeLevelSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>bbAxisCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbAxisCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>computeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>computeButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>bbResetButton</sender>
+        <signal>clicked()</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>bbResetButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>textureSizeSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>textureSizeSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfXSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfXSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfYSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfYSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfZSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfZSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfCheckBox</sender>
+        <signal>toggled(bool)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfCheckBox_toggled(bool)</slot>
+    </connection>
+    <connection>
+        <sender>dfXMinSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfXMinSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfXMaxSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfXMaxSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfYMinSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfYMinSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfYMaxSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfYMaxSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfZMinSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfZMinSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfZMaxSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfZMaxSpinBox_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfSliceSlider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfSliceSlider_valueChanged(int)</slot>
+    </connection>
+    <connection>
+        <sender>dfSliceSpinBox</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>DockPretreatmentWidgetBase</receiver>
+        <slot>dfSliceSpinBox_valueChanged(int)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>perspectiveButton_toggled(bool)</slot>
+    <slot>orthoButton_toggled(bool)</slot>
+    <slot>bbCheckBox_toggled(bool)</slot>
+    <slot>modelCheckBox_toggled(bool)</slot>
+    <slot>bbZSpinBox_valueChanged(float)</slot>
+    <slot>bbYSpinBox_valueChanged(float)</slot>
+    <slot>bbXSpinBox_valueChanged(float)</slot>
+    <slot>octreeCheckBox_toggled(bool)</slot>
+    <slot>octreeLevelSpinBox_valueChanged(int)</slot>
+    <slot>bbAxisCheckBox_toggled(bool)</slot>
+    <slot>computeButton_clicked()</slot>
+    <slot>bbResetButton_clicked()</slot>
+    <slot>textureSizeSpinBox_valueChanged(int)</slot>
+    <slot>dfXSpinBox_valueChanged(int)</slot>
+    <slot>dfYSpinBox_valueChanged(int)</slot>
+    <slot>dfZSpinBox_valueChanged(int)</slot>
+    <slot>dfCheckBox_toggled(bool)</slot>
+    <slot>dfXMinSpinBox_valueChanged(int)</slot>
+    <slot>dfXMaxSpinBox_valueChanged(int)</slot>
+    <slot>dfYMinSpinBox_valueChanged(int)</slot>
+    <slot>dfYMaxSpinBox_valueChanged(int)</slot>
+    <slot>dfZMinSpinBox_valueChanged(int)</slot>
+    <slot>dfZMaxSpinBox_valueChanged(int)</slot>
+    <slot>dfSliceSlider_valueChanged(int)</slot>
+    <slot>dfSliceSpinBox_valueChanged(int)</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+    <includehint>floatspinbox.h</includehint>
+</includehints>
+</UI>
